@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -85,7 +86,15 @@ public class MainActivity extends AppCompatActivity {
 
         MyAdapter objMyAdapter = new MyAdapter(MainActivity.this, intIcon, strTitle);
         trafficListView.setAdapter(objMyAdapter);
-        
+
+        trafficListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent objIntent = new Intent(MainActivity.this, DetailActivity.class);
+                startActivity(objIntent);
+                
+            }
+        });
 
     } // createListView
 
