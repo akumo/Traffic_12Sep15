@@ -28,6 +28,6 @@
         android:layout_below="@+id/txtHead"
         android:layout_above="@+id/button"
         android:layout_margin="20dp"
-        android:background="#87fffffd" />
+        android:background="#87ffffff" />
 
 </RelativeLayout>
