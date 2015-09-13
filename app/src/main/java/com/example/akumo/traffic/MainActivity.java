@@ -30,8 +30,15 @@ public class MainActivity extends AppCompatActivity {
         //Button Controller
         buttonController();
 
+        //Create ListView
+        createListView();
 
     } // Main Method
+
+    private void createListView() {
+
+        
+    } // createListView
 
     private void buttonController() {
 
@@ -47,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent objIntent = new Intent(Intent.ACTION_VIEW);
                 objIntent.setData(Uri.parse("https://youtu.be/ijXaCS8OTT4"));
                 startActivity(objIntent);
-
 
 
             } // event จะทำงานเมื่อมีการกดปุ่มนี้
